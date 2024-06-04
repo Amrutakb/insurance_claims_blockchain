@@ -34,6 +34,18 @@ App = {
     return App.initContract();
   },
 
+  // initContract: function() {
+  //   // Load contract ABI and address
+  //   const contractAbi = require('./build/contracts/Claims.json').abi;
+  //   const contractAddress = '0x123456789...'; // Replace with the actual deployed contract address
+  
+  //   // Initialize contract instance
+  //   const web3 = new Web3(App.web3Provider);
+  //   App.contracts.Claims = new web3.eth.Contract(contractAbi, contractAddress);
+  
+  //   return App.bindEvents();
+  // },
+  
   
   initContract: function() {
     $.getJSON('Claims.json', function(data) {
